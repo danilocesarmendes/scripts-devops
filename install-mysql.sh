@@ -4,7 +4,11 @@
 
 sudo yum update -y 
 
-sudo yum install -y mariadb-server
+# This will list all the packages of MariaDB.
+yum list mariadb* 
+
+#this will successfully install Maria DB.
+sudo yum install mariadb105-server.x86_64
 
 sudo systemctl enable mariadb
 
